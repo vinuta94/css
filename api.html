@@ -1,0 +1,303 @@
+<html>
+	<head>
+		<title>FORMS API</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+	
+		<style>
+			#page {
+    margin-left: 200px;
+}
+#maincontent {
+    float: right;
+    width: 100%;
+	
+    background-color: #F0F0F0;
+}
+#menuleftcontent{
+    float: left;
+    width: 190px;
+	height:300%;
+    margin-left: -200px;
+    background-color: #CCCCCC;
+}
+#clearingdiv {
+    clear: both;
+}
+		</style>
+		<body>  
+        <nav class="navbar navbar-inverse">
+			  <div class="container-fluid">
+				<div class="navbar-header">
+				  <a class="navbar-brand" href="#">JAVA SCRIPT TUTORIALS</a>
+				</div>
+				<ul class="nav navbar-nav">
+				  <li class="active"><a href="#">Home</a></li>
+				  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Topics <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					  <li><a href="index.html">Intrdouction</li>
+					  <li><a href="js_home.html">Js Home<opics</a></li>
+					  <li><a href="js_objects.html">Js Objects</a></li>
+						<li><a href="js_function.html">Js Functions</a></li>
+						
+					</ul>
+				  </li>
+				  <li><a href="#">Examples</a></li>
+				  <li><a href="#">Quiz</a></li>
+				</ul>
+			  </div>
+			</nav>
+			
+			<h1 align="center" ><strong> JAVASCRIPT FORM API</strong> </h1>
+<div id="page">
+    <div id="maincontent">
+		
+		 <div id="menuleftcontent">
+        <ul id="menu">
+			<br> <br>
+			<li><a href="js_form.html">Forms</a></li> <br>
+            <li><a href="#secondcontent">Form API</a></li> <br>
+			
+			
+            
+        </ul>
+    </div>
+        <div id="firstcontent"> 
+			<br>	
+			<ul type="none"> 
+			<h1> <strong>JavaScript Validation API</h1> </strong>
+			
+				<h2>Constraint Validation DOM Methods</h2>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:30%">Property</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>checkValidity()</td>
+<td>Returns true if an input element contains valid data.</td>
+</tr>
+<tr>
+<td>setCustomValidity()</td> <br>
+<td>Sets the validationMessage property of an input element.</td>
+</tr>
+</tbody></table>
+</ul>
+<br> 
+<p>If an input field contains invalid data, display a message:</p>
+<h4>The checkValidity() Method</h4> </ul>
+<br />
+<pre>
+ &lt;input id="id1" type="number" min="100" max="300" required&gt;<br >
+&lt;button onclick="myFunction()"&gt;OK&lt;button&gt;<br />
+
+&lt;p id="demo"&gt;&lt;p&gt;<br />
+&lt;script&gt;<br />
+function myFunction() {<br />
+    var inpObj = document.getElementById("id1");<br>
+    if (inpObj.checkValidity() == false) {<br />
+        document.getElementById("demo").innerHTML = inpObj.validationMessage;<br />
+    }<br />
+}<br />
+&lt;script&gt; <br />
+<h3>OUTPUT</h3>
+ <input id="id1" type="number" min="100" max="300" required><br >
+<button onclick="myFunction()">OK</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var inpObj = document.getElementById("id1");<br>
+    if (inpObj.checkValidity() == false) {
+        document.getElementById("demo").innerHTML = inpObj.validationMessage;
+    }
+}
+</script> 
+</pre>
+<br />
+<ol type="none">
+<h2>Constraint Validation DOM Properties</h2>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:25%">Property</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>validity</td>
+<td>Contains boolean properties related to the validity of an input element.</td>
+</tr>
+<tr>
+<td>validationMessage</td>
+<td>Contains the message a browser will display when the validity is false.</td>
+</tr>
+<tr>
+<td>willValidate</td>
+<td>Indicates if an input element will be validated.</td></tr></tbody></table></ol>
+	
+<br>
+	<br>
+		</div>
+		<div id="secondcontent">
+	<ol type="none">
+<h3>        JavaScript Form Validation</h3><br>
+<h5>HTML form validation can be done by JavaScript.</h5>
+
+<p>If a form field (fname) is empty, this function alerts a message, and returns false, to prevent the form from being submitted:</p>
+<pre>
+<h6>JavaScript Form Validation</h6>
+HTML form validation can be done by JavaScript.
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</pre>
+        <p>The function can be called when the form is submitted:</p><br>
+		<p>The typical form looks like this. Notice I've provided NAME= attributes for all form controls, including the form itself:</p>
+			<p>	This tutorial supplements all explanations with clarifying "Try it Yourself" examples.</p>
+			<pre>
+&lt;FORM NAME="myform" ACTION="" METHOD="GET"&gt;
+Enter something in the box: <BR>
+&lt;INPUT TYPE="text" NAME="inputbox" VALUE=""&gt;<br>
+&lt;INPUT TYPE="button" NAME="button" Value="Click" onClick="testResults(this.form)"&gt;<br>
+&lt;FORM&gt;<br>
+</pre>
+</ol>
+</div>
+        <ol type="none">
+<h2>Validity DOM Property</h2>
+<p>Validity property of an input element contains number of different properties relate to validity of data.</p>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:25%">Property</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>customError</td>
+<td>true if a custom validity message is set otherwise false.</td>
+</tr>
+<tr>
+<td>patternMismatch</td>
+<td>true if an element’s value does not match its pattern attribute otherwise false.</td>
+</tr>
+<tr>
+<td>rangeOverflow</td>
+<td>true if an element’s value is greater than its max attribute otherwise false.</td>
+</tr>
+<tr>
+<td>rangeUnderflow</td>
+<td>true if an element’s value is less than its min attribute otherwise false.</td>
+</tr>
+<tr>
+<td>stepMismatch</td>
+<td>true if an element’s value is invalid per its step attribute otherwise false.</td>
+</tr>
+<tr>
+<td>tooLong</td>
+<td>true if an element’s value exceeds its maxLength attribute otherwise false.</td>
+</tr>
+<tr>
+<td>typeMismatch</td>
+<td>Set to true, if an element’s value is invalid per its type attribute.</td>
+</tr>
+<tr>
+<td>valueMissing</td>
+<td>true if an element (with a required attribute) has no value otherwise false.</td>
+</tr>
+<tr>
+<td>valid</td>
+<td>true if an element’s value is valid otherwise false.</td></tr></tbody></table>
+
+<h3>Example of rangeUnderflow Property</h3>
+<pre><br>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;Enter Price below 100 to show error message.&lt;p&gt;
+&lt;input id="price" type="number" min="100"&gt;
+&lt;button onclick="myFunction()"&gt;OK&lt;button&gt;
+&lt;p id="error"&gt;&lt;p&gt;
+&lt;script&gt;
+function checkPrice() {
+    var txt = "";
+    if (document.getElementById("price").validity.rangeUnderflow) {
+       txt = "Price is lower than minimum allowed 100.";
+    }
+    document.getElementById("error").innerHTML = txt;
+}
+&lt;script&gt;
+
+&lt;body&gt;
+&lt;html&gt;
+
+<p>Enter Price below 100 to show error message.</p>
+<input id="price" type="number" min="100"><br />
+<button onclick="myFunction()">OK</button>
+
+<p id="error"></p>
+
+<script>
+function checkPrice() {
+    var txt = "";
+    if (document.getElementById("price").validity.rangeUnderflow) {
+       txt = &quot;Price is lower than minimum allowed 100.&quot;;
+    }
+    document.getElementById("error").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
+</pre>
+
+<h3>Example of rangeOverflow Property</h3>
+
+<pre>
+&lt;DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p>Enter a number and click OK:&lt;p&gt;
+
+&lt;input id="id1" type="number" min="100"&gt;
+&lt;button onclick="myFunction()"&gt;OK&lt;button&gt;
+
+&lt;p>If the number is less than 100 (the input's min attribute), an error message will be displayed.&lt;p&gt;
+
+&lt;p id="demo">&lt;p&gt;
+
+&lt;script&gt;
+function myFunction() {
+    var txt = "";
+    if (document.getElementById("id1").validity.rangeUnderflow) {
+        txt = "Value too small";
+    } else {
+        txt = "Input OK";
+    } 
+    document.getElementById("demo").innerHTML = txt;
+}
+&lt;script&gt;
+
+&lt;body&gt;
+&lt;html&gt;
+
+
+</pre>
+</ol>
+</div>
+
+	<div id="browse_app"> <ol>
+								<a class="btn btn-primary btn-s" href="js_form.html">previous</a>
+							<a class="btn btn-primary btn-s" href="js_objects.html">next</a> </ol></div>
+	</div>
+
+</body>
+</html>
