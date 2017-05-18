@@ -1,0 +1,295 @@
+<html>
+	<head>
+		<title>JS Introduction</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+	
+		<style>
+			#page {
+    margin-left: 200px;
+}
+#maincontent {
+    float: right;
+    width: 100%;
+	
+    background-color: #F0F0F0;
+}
+			
+#menuleftcontent{
+    float: left;
+    width: 190px;
+	height:300%;
+    margin-left: -200px;
+    background-color: #CCCCCC;
+}
+#clearingdiv {
+    clear: both;
+}
+		</style>
+		<body>  
+			
+			<nav class="navbar navbar-inverse">
+			  <div class="container-fluid">
+				<div class="navbar-header">
+				  <a class="navbar-brand" href="#">JAVA SCRIPT TUTORIALS</a>
+				</div>
+				<ul class="nav navbar-nav">
+				  <li class="active"><a href="#">Home</a></li>
+				  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Topics <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					  <li><a href="index.html">Js Introduction</li>
+					  <li><a href="js_form.html">Js Forms<Topics</a></li>
+					  <li><a href="js_objects.html">Js Objects</a></li>
+						<li><a href="js_function.html">Js Functions</a></li>
+						
+					</ul>
+				  </li>
+				  <li><a href="#">Examples</a></li>
+				  <li><a href="#">Quiz</a></li>
+				</ul>
+			  </div>
+			</nav>
+			
+			
+			<h1 align="center"><strong> JAVASCRIPT INTRODUCTION </strong> </h1>
+<div id="page">
+    <div id="maincontent">
+		
+		 <div id="menuleftcontent">
+        <ul id="menu">
+			<br>
+			<li><a href="intro.html">Introduction</a></li> <br>
+            <li><a href="where.html">Where to </a></li> <br>
+			<li><a href="#firstcontent">Syntax</a></li> <br>
+            <li><a href="#secondcontent">Output</a></li> <br>
+			<li><a href="#firstcontent">Statements</a></li> <br>
+            <li><a href="#secondcontent">Comments</a></li> <br>
+			<li><a href="#firstcontent">Variables</a></li> <br>
+            <li><a href="#secondcontent">Operators</a></li> <br>
+			<li><a href="#firstcontent">Arithmetic</a></li> <br>
+            <li><a href="#secondcontent">Assignments</a></li> <br>
+			<li><a href="#firstcontent">Data Types</a></li> <br>
+            <li><a href="#secondcontent">Functions</a></li> <br>
+			<li><a href="#firstcontent">Objects</a></li> <br>
+            <li><a href="#secondcontent">Scope</a></li> <br>
+			<li><a href="#firstcontent">Events</a></li> <br>
+            <li><a href="#secondcontent">Strings</a></li> <br>
+			<li><a href="#firstcontent">String Method</a></li> <br>
+            <li><a href="#secondcontent">Number</a></li> <br>
+			<li><a href="#firstcontent">Number Methods</a></li> <br>
+            <li><a href="#secondcontent">Math</a></li> <br>
+			<li><a href="#firstcontent">Random</a></li> <br>
+            <li><a href="#secondcontent">Dates</a></li> <br>
+			<li><a href="#firstcontent">Date Format</a></li> <br>
+            <li><a href="#secondcontent">Arrays</a></li> <br>
+			<li><a href="#firstcontent">Array Method</a></li> <br>
+            <li><a href="#secondcontent">Array Sort</a></li> <br>
+			<li><a href="#firstcontent">Booleans</a></li> <br>
+            <li><a href="#secondcontent">Comparison</a></li> <br>
+			<li><a href="#firstcontent">Condition</a></li> <br>
+            <li><a href="#secondcontent">Switch</a></li> <br>
+			<li><a href="#firstcontent">Loop for</a></li> <br>
+            <li><a href="#secondcontent">Loop while</a></li> <br>
+			<li><a href="#firstcontent">Break</a></li> <br>
+            <li><a href="#secondcontent">Type Conversion</a></li> <br>
+			<li><a href="#firstcontent">Bitwise</a></li> <br>
+            <li><a href="#secondcontent">RegExp</a></li> <br>
+			<li><a href="#firstcontent">Errors</a></li> <br>
+            <li><a href="#secondcontent">Debugging</a></li> <br>
+			<li><a href="#firstcontent">Hoisting</a></li> <br>
+            <li><a href="#secondcontent">Strict Mode</a></li> <br>
+			<li><a href="#firstcontent">Style Guide</a></li> <br>
+            <li><a href="#secondcontent">Best Practices</a></li> <br>
+			<li><a href="#firstcontent">Mistakes</a></li> <br>
+            <li><a href="#secondcontent">Performance</a></li> <br>
+			<li><a href="#firstcontent">Reserve Words</a></li> <br>
+            <li><a href="#secondcontent">Version</a></li> <br>
+			<li><a href="#firstcontent">Json </a></li> <br>
+        </ul>
+    </div>
+        <div id="firstcontent"> 
+			<br> <br> <br> <br>
+			<ol type="none"> 
+				 <pre>This page contains some examples of what JavaScript can do.</pre>
+			<h3>	JavaScript Can Change HTML Content</h3>
+			<p>One of many JavaScript HTML methods is <strong>getElementById().</strong></p>
+
+<p>This example uses the method to "find" an HTML element (with id="demo") and changes the element content (innerHTML) to "Hello JavaScript":</p>
+               <pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;body&gt;
+	
+  &lt;h2&gt;What Can JavaScript Do?&lt;/h2&gt;
+ 
+  &lt;p id="demo"&gt;JavaScript can change HTML content.&lt;/p&gt;
+  
+  &lt;button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'&gt;Click Me!&lt;/button&gt;
+  
+  &lt;/body&gt;
+  &lt;/html&gt;
+<h2><i>Output</i></h2>
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+			   </pre>
+			</ol>
+			</div>
+	
+	<br>
+		
+		<div id="secondcontent">
+		<ol type="none">
+		<pre>JavaScript accepts both double and single quotes:</pre>
+
+  &lt;!DOCTYPE html&gt;<br />
+  &lt;html&gt;<br />
+  &lt;body&gt;<br />
+  &lt;h2&gt;What Can JavaScript Do?&lt;/h2&gt;<br />
+<br />
+  &lt;p id="demo"&gt;JavaScript can change HTML content.&lt;/p&gt;<br />
+<br />
+  &lt;button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'"&gt;Click Me!&lt;/button&gt;<br />
+<br />
+  &lt;/body&gt;<br />
+  &lt;/html&gt;<br />
+<h2><i>Output</i></h2>
+  <h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click Me!</button></ol></div>
+
+	<div id="thirdcontent">
+		<ol type="none">
+	<h3>JavaScript Can Change HTML Attributes</h3>
+	<p>This example changes an HTML image by changing the src (source) attribute of an <img> tag:</p>
+ <pre>
+	&lt;!DOCTYPE html&gt;
+	
+	&lt;html&gt;
+	
+	&lt;body&gt;
+	
+	&lt;h2&gt;What Can JavaScript Do?&lt;/h2&gt;
+	
+	&lt;p&gt;JavaScript can change HTML attributes.&lt;/p&gt;
+	
+	&lt;p&gt;In this case JavaScript changes the src (source) attribute of an image.&lt;/p&gt;
+	
+	&lt;button onclick="document.getElementById('myImage').src='pic_bulbon.gif'"&gt;Turn on the light&lt;/button&gt;
+	
+	&lt;button onclick="document.getElementById('myImage').src='pic_bulboff.gif'"&gt;Turn off the light&lt;/button&gt;
+
+	&lt;/body&gt;
+	&lt;/html&gt;<ol>
+	<h2><i>Output</i></h2>
+	<h4>The Light Bulb</h4>
+	<p>JavaScript can change HTML attributes.</p>
+<p>In this case JavaScript changes the src (source) attribute of an image.</p>
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+</ol>
+
+ </pre><br>
+ <h3>JavaScript Can Change HTML Styles (CSS)</h3><br>
+ <p> Changing the style of an HTML element, is a variant of changing an HTML attribute:</p><br>
+ <pre>
+ &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h2&gt;What Can JavaScript Do?&lt;/h2&gt;
+
+&lt;p id="demo"&gt;JavaScript can change the style of an HTML element.&lt;/p&gt;
+
+&lt;button type="button" onclick="document.getElementById('demo').style.fontSize='35px'"&gt;Click Me!&lt;/button&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+<h2><i>Output</i></h2>
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+ <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+</pre>
+
+		</ol>
+	</div>
+		
+		<div id="fourthcontent">
+		<ol type="none"><BR>
+			<h3>JavaScript Can Hide HTML Elements</h3>
+			<p>Hiding HTML elements can be done by changing the display style:.</p>
+			
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&lt;body&gt;<br />
+<br />
+&lt;h2&gt;What Can JavaScript Do?&lt;/h2&gt;<br />
+<br />
+&lt;p id="demo"&gt;JavaScript can hide HTML elements.&lt;/p&gt;<br />
+<br />
+&lt;button type="button" onclick="document.getElementById('demo').style.display='none'"&gt;Click Me!&lt;/button&gt;<br />
+<br />
+<br />
+&lt;/body&gt;<br />
+&lt;/html&gt; <br />
+<h2><i>Output</i></h2>
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+<br>
+
+			<h3>JavaScript Can Show HTML Elements</h3>
+			<p>Showing hidden HTML elements can also be done by changing the display style:</p>
+			<br>
+			<pre>
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;body&gt;
+
+&lt;h2&gt;What Can JavaScript Do?&lt;/h2&gt;
+
+&lt;p&gt;JavaScript can show hidden HTML elements.&lt;/p&gt;
+
+&lt;p id="demo" style="display:none"&gt;Hello JavaScript!&lt;/p&gt;
+
+&lt;button type="button" onclick="document.getElementById('demo').style.display='block'"&gt;Click Me!&lt;/button&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt; 
+<h2><i>Output</i></h2>
+<h2>What Can JavaScript Do?</h2>
+<p>JavaScript can show hidden HTML elements.</p>
+<p id="demo" style="display:none">Hello JavaScript!</p>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+	</pre>
+	</div>
+			</div>
+	
+	<div id="browse_app"> <ol>
+								<a class="btn btn-primary btn-s" href="js_home.html">previous</a>
+							<a class="btn btn-primary btn-s" href="where.html">next</a> </ol></div>
+	</div>
+	
+	</div>
+	
+</body>
+</html>
+
